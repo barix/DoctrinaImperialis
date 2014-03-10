@@ -1,0 +1,80 @@
+\documentclass[a4paper,10pt, parskip, german]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{pict2e}
+\usepackage[ngerman]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{helvet}
+\usepackage{tabularx}
+\usepackage{amsmath}          % Mathe-Kram
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{color}            % Text- und Hintergrundfarben
+\usepackage{multicol}         % Ermoeglicht Wechsel zwischen ein- und zweispaltig
+\usepackage{multirow}
+\usepackage{verbatim}         % Verbesserte Verbatim-Umgebung
+\usepackage{alltt}            % Alltt-Umgebung
+\usepackage[export]{adjustbox}
+% \usepackage{tex4ht}
+
+
+\addtolength{\footskip}{-0.8cm}% Fußbereich 1 cm höher setzen
+
+\usepackage[a4paper,
+  left=2.0cm, right=1.5cm,
+  top=2.0cm, bottom=1.5cm]{geometry}
+
+\pagenumbering{arabic}
+\setlength{\parindent}{0pt}
+
+\title{
+Doctrina Imperialis \\
+\normalsize{~\\ Stand: 05.03.2014}
+}
+\author{}
+\date{\vspace{-5ex}}
+\begin{document}
+
+\sffamily
+
+\maketitle
+
+\begin{abstract}
+Die Doctrina Imperialis ist eine Sammlung von Regelklarstellungen für
+Warhammer.
+Die Doctrina basiert auf den Games-Workshop-Regeln, namentlich das
+Regelbuch, die Codices und FAQs. Die englischen Regeln haben Vorrang.
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+%
+% --
+% Abschnitt: Allgemeines
+% --
+%
+\input{Allgemeines}
+
+\newpage
+%
+% --
+% Abschnitt: Regelbuch
+% --
+%
+\input{Regelbuch}
+
+\newpage
+%
+% --
+% Abschnitt: Codizes
+% --
+%
+\input{Codizes}
+
+\end{document}
